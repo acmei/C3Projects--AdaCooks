@@ -1,0 +1,3 @@
+name, email, password, password_confirmation
+SamIAm, samiam@email.com, samiam, samiam
+WillIAm, william@email.com, william, william

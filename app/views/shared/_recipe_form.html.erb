@@ -1,0 +1,21 @@
+<%= form_for @recipe, url: @url, method: @method do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :desc %>
+  <%= f.text_area :desc %>
+
+  <%= f.label :prep %>
+  <%= f.text_area :prep %>
+
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+
+  <%= f.label :cookbook_id %>
+  <%= f.select :cookbook, options_for_select(@user.cookbooks) %>
+
+  <%= f.hidden_field :user_id, :value => params[:user_id] %>
+
+  <%= f.submit %>
+
+<% end %>
