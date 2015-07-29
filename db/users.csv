@@ -1,3 +1,5 @@
-name, email, password, password_confirmation
-SamIAm, samiam@email.com, samiam, samiam
-WillIAm, william@email.com, william, william
+name,email,password,password_confirmation
+Anita,asovay@gmail.com,password,password
+Kyna,kyna@gmail.com,password,password
+Harriet,harry@gmail.com,password,password
+William,willy@gmail.com,password,password
