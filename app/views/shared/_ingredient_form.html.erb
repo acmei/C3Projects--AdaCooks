@@ -1,7 +1,7 @@
 <div class="form">
   <%= form_for @ingredient, url: @url, method: @method do |f| %>
 
-    <%= f.label :name %>
+    <%= f.label :name, class: "required"  %>
     <%= f.text_field :name, class: "form-control form-group" %>
 
     <%= f.label :image %>

@@ -1,6 +1,6 @@
 <div class="form">
   <%= form_for @recipe, url: @url, method: @method do |f| %>
-    <%= f.label :name %>
+    <%= f.label :name, class: "required" %>
     <%= f.text_field :name, class: "form-control form-group" %>
 
     <%= f.label :desc, "Description" %>
@@ -9,11 +9,11 @@
     <%= f.label :image, "Upload an Image" %>
     <%= f.file_field :image, class: "form-control form-group" %>
 
-    <%= f.label :prep, "Preparation" %>
+    <%= f.label :prep, "Preparation", class: "required"  %>
     <%= f.text_area :prep, class: "form-control form-group" %>
 
     <div class="form-group">
-      <%= f.label :ingredients, "Select All Ingredients: " %>
+      <%= f.label :ingredients, "Select All Ingredients: ", class: "required"  %>
       <%= collection_check_boxes(:recipe, :ingredient_ids, Ingredient.alpha, :id, :name) do |b| %>
         <%= b.label class: "checkbox-inline form-group" do %>
           <%= b.check_box + b.text.titlecase %>
